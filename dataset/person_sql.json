@@ -1,0 +1,16 @@
+{
+	"name": "person_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQLFORALL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "Person",
+			"table": "Person1"
+		}
+	}
+}

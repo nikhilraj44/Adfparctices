@@ -1,0 +1,20 @@
+{
+	"name": "ParquetFailed",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_FAILEDPARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "personfailed",
+				"fileSystem": "sqldata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
