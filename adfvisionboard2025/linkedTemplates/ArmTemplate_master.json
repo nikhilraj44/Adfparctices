@@ -19,6 +19,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'LS_SQL_SERVER'"
 		},
+		"LS_SQLFORALL_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLFORALL'"
+		},
+		"LS_output_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_output'"
+		},
+		"LS_FAILEDPARQUET_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_FAILEDPARQUET'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adfoutput1611.dfs.core.windows.net/"
@@ -38,6 +50,26 @@
 		"LS_SQL_SERVER_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "admin"
+		},
+		"LS_SQLFORALL_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "8405-HFWRSV3\\SQLEXPRESS01"
+		},
+		"LS_SQLFORALL_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "AdventureWorks2022"
+		},
+		"LS_SQLFORALL_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin"
+		},
+		"LS_output_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adfoutput1611.dfs.core.windows.net/"
+		},
+		"LS_FAILEDPARQUET_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adfoutput1611.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -72,14 +104,29 @@
 					"Input_LS_accountKey": {
 						"value": "[parameters('Input_LS_accountKey')]"
 					},
+					"LS_output_accountKey": {
+						"value": "[parameters('LS_output_accountKey')]"
+					},
+					"LS_FAILEDPARQUET_accountKey": {
+						"value": "[parameters('LS_FAILEDPARQUET_accountKey')]"
+					},
 					"LS_SQL_SERVER_password": {
 						"value": "[parameters('LS_SQL_SERVER_password')]"
+					},
+					"LS_SQLFORALL_password": {
+						"value": "[parameters('LS_SQLFORALL_password')]"
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
 					"Input_LS_properties_typeProperties_url": {
 						"value": "[parameters('Input_LS_properties_typeProperties_url')]"
+					},
+					"LS_output_properties_typeProperties_url": {
+						"value": "[parameters('LS_output_properties_typeProperties_url')]"
+					},
+					"LS_FAILEDPARQUET_properties_typeProperties_url": {
+						"value": "[parameters('LS_FAILEDPARQUET_properties_typeProperties_url')]"
 					},
 					"LS_SQL_SERVER_properties_typeProperties_server": {
 						"value": "[parameters('LS_SQL_SERVER_properties_typeProperties_server')]"
@@ -89,6 +136,15 @@
 					},
 					"LS_SQL_SERVER_properties_typeProperties_userName": {
 						"value": "[parameters('LS_SQL_SERVER_properties_typeProperties_userName')]"
+					},
+					"LS_SQLFORALL_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLFORALL_properties_typeProperties_server')]"
+					},
+					"LS_SQLFORALL_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLFORALL_properties_typeProperties_database')]"
+					},
+					"LS_SQLFORALL_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLFORALL_properties_typeProperties_userName')]"
 					}
 				}
 			},

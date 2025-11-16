@@ -14,6 +14,15 @@
 		"LS_SQL_SERVER_password": {
 			"value": ""
 		},
+		"LS_SQLFORALL_password": {
+			"value": ""
+		},
+		"LS_output_accountKey": {
+			"value": ""
+		},
+		"LS_FAILEDPARQUET_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adfoutput1611.dfs.core.windows.net/"
 		},
@@ -28,6 +37,21 @@
 		},
 		"LS_SQL_SERVER_properties_typeProperties_userName": {
 			"value": "admin"
+		},
+		"LS_SQLFORALL_properties_typeProperties_server": {
+			"value": "8405-HFWRSV3\\SQLEXPRESS01"
+		},
+		"LS_SQLFORALL_properties_typeProperties_database": {
+			"value": "AdventureWorks2022"
+		},
+		"LS_SQLFORALL_properties_typeProperties_userName": {
+			"value": "admin"
+		},
+		"LS_output_properties_typeProperties_url": {
+			"value": "https://adfoutput1611.dfs.core.windows.net/"
+		},
+		"LS_FAILEDPARQUET_properties_typeProperties_url": {
+			"value": "https://adfoutput1611.dfs.core.windows.net/"
 		}
 	}
 }
