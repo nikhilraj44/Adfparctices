@@ -1,6 +1,7 @@
 {
-	"name": "pipeline1",
+	"name": "copy_data_execute_pipline2",
 	"properties": {
+		"description": "Copy data from sql on premise server and if copy activity succeeded execute pipline 2, which will move the copied data from one ADLS location to another (from csv to parquet)",
 		"activities": [
 			{
 				"name": "Copy data1",
