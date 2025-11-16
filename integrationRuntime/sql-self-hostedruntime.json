@@ -1,0 +1,6 @@
+{
+	"name": "sql-self-hostedruntime",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adfvisionboard2025",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bf136317-ad7f-4d5c-8e19-ba5cb90a17a4",
+		"tenantId": "47fecbd5-7026-4829-8690-16794dc810dc"
+	}
+}
