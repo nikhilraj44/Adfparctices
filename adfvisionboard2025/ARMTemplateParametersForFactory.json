@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfvisionboard2025"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"Input_LS_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_SERVER_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adfoutput1611.dfs.core.windows.net/"
+		},
+		"Input_LS_properties_typeProperties_url": {
+			"value": "https://adfinput1611.dfs.core.windows.net/"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_server": {
+			"value": "8405-HFWRSV3\\SQLEXPRESS01"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_database": {
+			"value": "AdventureWorks2022"
+		},
+		"LS_SQL_SERVER_properties_typeProperties_userName": {
+			"value": "admin"
+		}
+	}
+}
